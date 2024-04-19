@@ -22,4 +22,13 @@ export class CardComponent {
     }
   }
 
+  formatLabel(value: number): string {
+    if (value >= 1000) {
+      return Math.round(value / 1000) + '%';
+    }
+
+    return `${value}`;
+  }
 }
+
+

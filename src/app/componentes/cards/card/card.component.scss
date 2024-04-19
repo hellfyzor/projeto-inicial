@@ -7,6 +7,7 @@
   padding: 30px;
   font-family: 'Poppins', sans-serif;
 
+
   &__item {
     padding: 10px;
   }
@@ -19,5 +20,22 @@
     font-weight: 600;
     font-size: 40px;
   }
+  &__botoes {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
 
 }
+
+
+
+:host ::ng-deep .card-button {
+  background-color: chartreuse !important;
+}
+
+:host ::ng-deep .card-button-cancel {
+  background-color: dimgray !important;
+}
+
+

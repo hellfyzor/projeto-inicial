@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {CardsModule} from "./componentes/cards/cards.module";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatSlider, MatSliderThumb} from "@angular/material/slider";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {MatSlider, MatSliderThumb} from "@angular/material/slider";
         AppRoutingModule,
         CardsModule,
         MatSlider,
-        MatSliderThumb
+        MatSliderThumb,
+        FormsModule
     ],
   providers: [
     provideAnimationsAsync()
